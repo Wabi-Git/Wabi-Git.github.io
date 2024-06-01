@@ -42,7 +42,7 @@ public class FoodSpawner : MonoBehaviour
         // Calculate random position within the ground bounds
         float randomX = Random.Range(-groundSizeX / 2 + padding, groundSizeX / 2 - padding);
         float randomZ = Random.Range(-groundSizeZ / 2 + padding, groundSizeZ / 2 - padding);
-        Vector3 spawnPosition = new Vector3(randomX, 0.5f, randomZ); // Assuming Y position is 0.5 for visibility
+        Vector3 spawnPosition = new Vector3(randomX, ground.position.y , randomZ); // Assuming Y position is 0.5 for visibility
 
         // Instantiate the food at the calculated position
         Instantiate(foodPrefab, spawnPosition, Quaternion.identity);

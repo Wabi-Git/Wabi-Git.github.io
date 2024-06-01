@@ -12,13 +12,27 @@ public class SnakeController : MonoBehaviour
     public int Gap = 100;
 
     public GameObject BodyPrefab;
+    public FoodSpawner foodSpawner;
 
+    public float ColliderBoxScale = 1.5f;
+
+    private Vector3 ColliderSize; // Variable to store the calculated collider size
     private List<GameObject> BodyParts = new List<GameObject>();
     private List<Vector3> PositionsHistory = new List<Vector3>();
 
     // Start is called before the first frame update
     void Start()
     {
+        // Calculate the collider size based on the scale
+        ColliderSize = new Vector3(ColliderBoxScale, ColliderBoxScale, ColliderBoxScale);
+
+        // Set the BoxCollider size
+        BoxCollider boxCollider = GetComponent<BoxCollider>();
+        if (boxCollider != null)
+        {
+            boxCollider.size = ColliderSize;
+        }
+
         GrowSnake();
         // TEMPORY: we're gonna grow this bitch a lil'
         GrowSnake();
@@ -65,6 +79,23 @@ public class SnakeController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             RestartGame();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("OnTriggerEnter called"); // DEBUG: statement to check if the method is called
+
+        if (other.gameObject.CompareTag("Food"))
+        {
+            // Call the method to grow the snake
+            GrowSnake();
+
+            // Destroy the food object
+            Destroy(other.gameObject);
+
+            // Spawn new food
+            foodSpawner.SpawnFood();
         }
     }
 
