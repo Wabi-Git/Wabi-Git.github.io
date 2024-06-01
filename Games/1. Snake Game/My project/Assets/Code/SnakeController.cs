@@ -5,16 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class SnakeController : MonoBehaviour
 {
+    // LEARNING NOTE: when these are public within a class then the values can be edited from Unity
     public float MoveSpeed = 5;
     public float SteerSpeed = 180;
+    public float BodySpeed = 5;
+    public int Gap = 100;
 
     public GameObject BodyPrefab;
 
     private List<GameObject> BodyParts = new List<GameObject>();
+    private List<Vector3> PositionsHistory = new List<Vector3>();
 
     // Start is called before the first frame update
     void Start()
     {
+        GrowSnake();
+        // TEMPORY: we're gonna grow this bitch a lil'
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
+        GrowSnake();
         GrowSnake();
     }
 
@@ -34,6 +44,22 @@ public class SnakeController : MonoBehaviour
         // Steer
         float steerDirection = Input.GetAxis("Horizontal");
         transform.Rotate(Vector3.up * steerDirection * SteerSpeed * Time.deltaTime);
+
+        // Store position history
+        PositionsHistory.Insert(0, transform.position);
+
+        // Move body parts
+        int index = 0;
+        foreach (var body in BodyParts)
+        {
+            // LEARNING NOTE: Gap controls the positions skipped and adjusts the space between the body parts
+            // LEARNING NOTE: If the index is greater than the count of all positions stored then take the oldest existing position instead
+            Vector3 point = PositionsHistory[Mathf.Min(index * Gap, PositionsHistory.Count - 1)];
+            Vector3 moveDirection = point - body.transform.position;
+            body.transform.position += moveDirection * BodySpeed * Time.deltaTime;
+            body.transform.LookAt(point);
+            index++;
+        }
 
         // estarts game if Key "R" pushed
         if (Input.GetKeyDown(KeyCode.R))
