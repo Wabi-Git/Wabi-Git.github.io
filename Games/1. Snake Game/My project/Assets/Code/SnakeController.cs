@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 public class SnakeController : MonoBehaviour
 {
     public float MoveSpeed = 5;
+    public float SteerSpeed = 180;
+
+    public GameObject BodyPrefab;
+
+    private List<GameObject> BodyParts = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        GrowSnake();
     }
 
     public void RestartGame()
@@ -23,13 +28,23 @@ public class SnakeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // move forward (multiplication by deltaTime is to account for frame drops)
+        // Move forward (multiplication by deltaTime is to account for frame drops)
         transform.position += transform.forward * MoveSpeed * Time.deltaTime;
 
-        // Restarts game if Key "R" pushed
+        // Steer
+        float steerDirection = Input.GetAxis("Horizontal");
+        transform.Rotate(Vector3.up * steerDirection * SteerSpeed * Time.deltaTime);
+
+        // estarts game if Key "R" pushed
         if (Input.GetKeyDown(KeyCode.R))
         {
             RestartGame();
         }
+    }
+
+    private void GrowSnake()
+    {
+        GameObject body = Instantiate(BodyPrefab);
+        BodyParts.Add(body);
     }
 }
