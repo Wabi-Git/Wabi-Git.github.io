@@ -318,13 +318,7 @@
         310,
         311,
         312,
-        313,
-        314,
-        315,
-        316,
-        317,
-        318,
-        319
+        313
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -14349,116 +14343,34 @@
       "DebugActionIndex": 290
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-      "DisplayName": "7z build.framework.js",
-      "Action": "cd \"D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/7z.exe\" a -tgzip \"D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\" \"build.framework.js\"",
+      "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.framework.js",
+      "DisplayName": "Copying Game Build.framework.js",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked"
+        "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.framework.js"
       ],
       "ToBuildDependencies": [
         290
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
       "DebugActionIndex": 291
     },
     {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Game Build.framework.js.gz_3rdi.info",
-      "DisplayName": "Writing Game Build.framework.js.gz_3rdi.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 167696,
-      "PayloadLength": 541,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/Game Build.framework.js.gz_3rdi.info"
-      ],
-      "DebugActionIndex": 292
-    },
-    {
-      "Annotation": "GzipMarker D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.framework.js.gz",
-      "DisplayName": "GzipMarker Game Build.framework.js",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.31f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.31f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\Game Build.framework.js.gz_3rdi.info\"",
+      "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.wasm",
+      "DisplayName": "Copying Game Build.wasm",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-        "Library/Bee/artifacts/csharpactions/Game Build.framework.js.gz_3rdi.info",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm"
       ],
       "Outputs": [
-        "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.framework.js.gz"
-      ],
-      "ToBuildDependencies": [
-        291,
-        292
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 293
-    },
-    {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-      "DisplayName": "7z build.wasm",
-      "Action": "cd \"D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/7z.exe\" a -tgzip \"D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\" \"build.wasm\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/7z.exe"
-      ],
-      "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked"
+        "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.wasm"
       ],
       "ToBuildDependencies": [
         288
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 294
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Game Build.wasm.gz_g2se.info",
-      "DisplayName": "Writing Game Build.wasm.gz_g2se.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 168333,
-      "PayloadLength": 525,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/Game Build.wasm.gz_g2se.info"
-      ],
-      "DebugActionIndex": 295
-    },
-    {
-      "Annotation": "GzipMarker D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.wasm.gz",
-      "DisplayName": "GzipMarker Game Build.wasm",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.31f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.31f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\Game Build.wasm.gz_g2se.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-        "Library/Bee/artifacts/csharpactions/Game Build.wasm.gz_g2se.info",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.wasm.gz"
-      ],
-      "ToBuildDependencies": [
-        294,
-        295
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 296
+      "DebugActionIndex": 292
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/UnityLinkerToEditorData.json",
@@ -14473,7 +14385,7 @@
       "ToBuildDependencies": [
         4
       ],
-      "DebugActionIndex": 297
+      "DebugActionIndex": 293
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/MethodMap.tsv",
@@ -14488,20 +14400,20 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 298
+      "DebugActionIndex": 294
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info",
       "DisplayName": "Writing webgl.data_qnm2.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 168946,
+      "PayloadOffset": 167680,
       "PayloadLength": 1956,
       "PayloadDebugContentSnippet": "{\"System.Collections.Generic.D",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info"
       ],
-      "DebugActionIndex": 299
+      "DebugActionIndex": 295
     },
     {
       "Annotation": "Assemble WebGL Data Library/Bee/artifacts/WebGL/webgl.data",
@@ -14527,73 +14439,32 @@
       "ToBuildDependencies": [
         2,
         5,
-        299
+        295
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 300
+      "DebugActionIndex": 296
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-      "DisplayName": "7z webgl.data",
-      "Action": "cd \"D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGL\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/7z.exe\" a -tgzip \"D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGL/webgl.data.unmarked\" \"webgl.data\"",
+      "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.data",
+      "DisplayName": "Copying Game Build.data",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/webgl.data"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked"
+        "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.data"
       ],
       "ToBuildDependencies": [
-        300
+        296
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 301
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/Game Build.data.gz_ywer.info",
-      "DisplayName": "Writing Game Build.data.gz_ywer.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 170998,
-      "PayloadLength": 502,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/Game Build.data.gz_ywer.info"
-      ],
-      "DebugActionIndex": 302
-    },
-    {
-      "Annotation": "GzipMarker D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.data.gz",
-      "DisplayName": "GzipMarker Game Build.data",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.31f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.31f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\Game Build.data.gz_ywer.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-        "Library/Bee/artifacts/csharpactions/Game Build.data.gz_ywer.info",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.data.gz"
-      ],
-      "ToBuildDependencies": [
-        301,
-        302
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 303
+      "DebugActionIndex": 297
     },
     {
       "Annotation": "PreprocessJS Library/Bee/artifacts/WebGLGame Build.loader.js",
       "DisplayName": "PreprocessJS WebGLGame Build.loader",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='D\\x3a/Gitkraken Repos/Wabi Mini Games/Wabi\\x2ds\\x2dMini\\x2dGames/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGLGame Build.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='Wabi Mink'\" \"PRODUCT_NAME='Sneki mini game'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Game Build.data.gz'\" \"FRAMEWORK_FILENAME='Game Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Game Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.31f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='D\\x3a/Gitkraken Repos/Wabi Mini Games/Wabi\\x2ds\\x2dMini\\x2dGames/Games/1. Snake Game/My project/Library/Bee/artifacts/WebGLGame Build.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='Wabi Mink'\" \"PRODUCT_NAME='Sneki mini game'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Game Build.data'\" \"FRAMEWORK_FILENAME='Game Build.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Game Build.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.31f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -14602,7 +14473,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 304
+      "DebugActionIndex": 298
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.loader.js",
@@ -14615,14 +14486,14 @@
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/Build/Game Build.loader.js"
       ],
       "ToBuildDependencies": [
-        304
+        298
       ],
-      "DebugActionIndex": 305
+      "DebugActionIndex": 299
     },
     {
       "Annotation": "PreprocessJS D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/index.html",
       "DisplayName": "PreprocessJS index",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='D\\x3a/Gitkraken Repos/Wabi Mini Games/Wabi\\x2ds\\x2dMini\\x2dGames/Games/1. Snake Game/Game Build/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Wabi Mink'\" \"PRODUCT_NAME='Sneki mini game'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Game Build.data.gz'\" \"FRAMEWORK_FILENAME='Game Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Game Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.31f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Game Build.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='D\\x3a/Gitkraken Repos/Wabi Mini Games/Wabi\\x2ds\\x2dMini\\x2dGames/Games/1. Snake Game/Game Build/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Wabi Mink'\" \"PRODUCT_NAME='Sneki mini game'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Game Build.data'\" \"FRAMEWORK_FILENAME='Game Build.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Game Build.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.31f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Game Build.loader.js'\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
       ],
@@ -14631,7 +14502,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 306
+      "DebugActionIndex": 300
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/favicon.ico",
@@ -14643,7 +14514,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/favicon.ico"
       ],
-      "DebugActionIndex": 307
+      "DebugActionIndex": 301
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/fullscreen-button.png",
@@ -14655,7 +14526,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/fullscreen-button.png"
       ],
-      "DebugActionIndex": 308
+      "DebugActionIndex": 302
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/MemoryProfiler.png",
@@ -14667,7 +14538,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/MemoryProfiler.png"
       ],
-      "DebugActionIndex": 309
+      "DebugActionIndex": 303
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-empty-dark.png",
@@ -14679,7 +14550,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-empty-dark.png"
       ],
-      "DebugActionIndex": 310
+      "DebugActionIndex": 304
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-empty-light.png",
@@ -14691,7 +14562,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-empty-light.png"
       ],
-      "DebugActionIndex": 311
+      "DebugActionIndex": 305
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-full-dark.png",
@@ -14703,7 +14574,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-full-dark.png"
       ],
-      "DebugActionIndex": 312
+      "DebugActionIndex": 306
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-full-light.png",
@@ -14715,12 +14586,12 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/progress-bar-full-light.png"
       ],
-      "DebugActionIndex": 313
+      "DebugActionIndex": 307
     },
     {
       "Annotation": "PreprocessJS D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/style.css",
       "DisplayName": "PreprocessJS style",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='D\\x3a/Gitkraken Repos/Wabi Mini Games/Wabi\\x2ds\\x2dMini\\x2dGames/Games/1. Snake Game/Game Build/TemplateData/style.css'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Wabi Mink'\" \"PRODUCT_NAME='Sneki mini game'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Game Build.data.gz'\" \"FRAMEWORK_FILENAME='Game Build.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Game Build.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.31f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Game Build.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='D\\x3a/Gitkraken Repos/Wabi Mini Games/Wabi\\x2ds\\x2dMini\\x2dGames/Games/1. Snake Game/Game Build/TemplateData/style.css'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='Wabi Mink'\" \"PRODUCT_NAME='Sneki mini game'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='Game Build.data'\" \"FRAMEWORK_FILENAME='Game Build.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='Game Build.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.31f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='Game Build.loader.js'\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2022.3.31f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
       ],
@@ -14729,7 +14600,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 314
+      "DebugActionIndex": 308
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/unity-logo-dark.png",
@@ -14741,7 +14612,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 315
+      "DebugActionIndex": 309
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/unity-logo-light.png",
@@ -14753,7 +14624,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/unity-logo-light.png"
       ],
-      "DebugActionIndex": 316
+      "DebugActionIndex": 310
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/webgl-logo.png",
@@ -14765,7 +14636,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/webgl-logo.png"
       ],
-      "DebugActionIndex": 317
+      "DebugActionIndex": 311
     },
     {
       "Annotation": "CopyFiles D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/webmemd-icon.png",
@@ -14777,7 +14648,7 @@
       "Outputs": [
         "D:/Gitkraken Repos/Wabi Mini Games/Wabi-s-Mini-Games/Games/1. Snake Game/Game Build/TemplateData/webmemd-icon.png"
       ],
-      "DebugActionIndex": 318
+      "DebugActionIndex": 312
     },
     {
       "Annotation": "Player",
@@ -14787,11 +14658,17 @@
       "ToBuildDependencies": [
         4,
         284,
+        291,
+        292,
         293,
-        296,
+        294,
         297,
-        298,
+        299,
+        300,
+        301,
+        302,
         303,
+        304,
         305,
         306,
         307,
@@ -14799,16 +14676,10 @@
         309,
         310,
         311,
-        312,
-        313,
-        314,
-        315,
-        316,
-        317,
-        318
+        312
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 319
+      "DebugActionIndex": 313
     }
   ],
   "FileSignatures": [
@@ -15176,7 +15047,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 319
+          "Player": 313
         }
 ,  "DefaultNodes": [
     0
