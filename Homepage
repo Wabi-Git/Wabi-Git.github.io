@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Unity Games</title>
+</head>
+<body>
+    <h1>Welcome to My Unity Games</h1>
+    <div>
+        <a href="Games/1. Snake Game/Game Build/index.html">Play Snake Game</a>
+    </div>
+    <!-- Add more links to other games if you have multiple builds -->
+</body>
+</html>
