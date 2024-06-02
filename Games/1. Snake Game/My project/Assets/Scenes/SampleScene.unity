@@ -404,7 +404,7 @@ MonoBehaviour:
   SteerSpeed: 180
   BodySpeed: 5
   Gap: 100
-  InitialLength: 3
+  InitialLength: 5
   BodyPrefab: {fileID: 3460383625146968875, guid: 9f4b19af89192e34cbc4eabe8600b4c6, type: 3}
   Head: {fileID: 2020372395}
   ColliderBoxScale: 1

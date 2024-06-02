@@ -22,5 +22,17 @@ public class SnakeHead : MonoBehaviour
             Destroy(other.gameObject);
             foodSpawner.SpawnFood();
         }
+        else if (other.CompareTag("Body"))
+        {
+            // Only cut the tail if the current length exceeds the initial length
+            if (snakeController.BodyParts.Count > snakeController.InitialLength)
+            {
+                int cutIndex = snakeController.BodyParts.IndexOf(other.gameObject);
+                if (cutIndex != -1)
+                {
+                    snakeController.ShortenSnake(cutIndex);
+                }
+            }
+        }
     }
 }
