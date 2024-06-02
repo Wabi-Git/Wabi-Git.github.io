@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 3193596236034198664}
   - component: {fileID: 7547293104274155906}
   - component: {fileID: 8286678770865734411}
-  - component: {fileID: 8934788563032588312}
-  m_Layer: 0
+  - component: {fileID: -8637021348357197059}
+  m_Layer: 6
   m_Name: Food
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8934788563032588312
+--- !u!65 &-8637021348357197059
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

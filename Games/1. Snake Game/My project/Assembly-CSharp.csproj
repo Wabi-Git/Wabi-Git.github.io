@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\SnakeController.cs" />
+    <Compile Include="Assets\Code\SnakeHead.cs" />
     <Compile Include="Assets\Code\FoodSpawner.cs" />
   </ItemGroup>
   <ItemGroup>

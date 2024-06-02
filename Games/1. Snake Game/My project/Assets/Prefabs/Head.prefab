@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2160057691730868052}
   - component: {fileID: 3245493643774139687}
   - component: {fileID: 4633447272553532852}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye (L)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,9 +114,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8425864530337555248}
-  m_Layer: 0
+  - component: {fileID: -3157183994658227855}
+  - component: {fileID: -3435017581783803877}
+  - component: {fileID: 6367558621570678125}
+  m_Layer: 6
   m_Name: Head
-  m_TagString: Untagged
+  m_TagString: Snake Head
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -138,6 +141,67 @@ Transform:
   - {fileID: 1819666978890082530}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &-3157183994658227855
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808588568212645953}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &-3435017581783803877
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808588568212645953}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &6367558621570678125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808588568212645953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 638fd946e9264154ea9cb55537de2654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2694349846784594601
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1819666978890082530}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eyes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +247,7 @@ GameObject:
   - component: {fileID: 4877619674718054387}
   - component: {fileID: 8243879115781963916}
   - component: {fileID: 9136999263511526782}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -288,7 +352,7 @@ GameObject:
   - component: {fileID: 1614826545036633579}
   - component: {fileID: 3152071603896790700}
   - component: {fileID: 4488706623677666363}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye (R)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
