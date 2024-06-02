@@ -46,6 +46,8 @@ public class SnakeController : MonoBehaviour
 
             GroundMinBounds = groundCenter - groundSize / 2;
             GroundMaxBounds = groundCenter + groundSize / 2;
+            // Debug.Log("Snake minX, minZ, maxX, maxZ: " + GroundMinBounds.x + ", " + GroundMinBounds.z + ", " + GroundMaxBounds.x + ", " + GroundMaxBounds.z);
+
         }
         else
         {

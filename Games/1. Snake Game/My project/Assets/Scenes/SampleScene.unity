@@ -246,7 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 48294565032114808, guid: a7276623e84923b4e8c633fd2f0ecc54, type: 3}
-  ground: {fileID: 1137004251798691579, guid: 6afbe6d7f43b08449af8e7afae483ee7, type: 3}
+  ground: {fileID: 1801297851}
   padding: 1
 --- !u!4 &721731213
 Transform:
@@ -348,13 +348,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 28.8, z: -0}
+  m_LocalRotation: {x: 0.49864683, y: -0, z: -0, w: 0.86680526}
+  m_LocalPosition: {x: 0, y: 25.3, z: -18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 59.821, y: 0, z: 0}
 --- !u!1 &1520781970
 GameObject:
   m_ObjectHideFlags: 0

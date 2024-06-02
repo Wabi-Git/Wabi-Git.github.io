@@ -18,8 +18,11 @@ public class FoodSpawner : MonoBehaviour
             Vector3 groundSize = ground.localScale;
             Vector3 groundCenter = ground.position;
 
-            GroundMinBounds = groundCenter - groundSize / 4;
-            GroundMaxBounds = groundCenter + groundSize / 4;
+            GroundMinBounds = groundCenter - groundSize / 2;
+            GroundMaxBounds = groundCenter + groundSize / 2;
+
+            // Debug.Log("Food minX, minZ, maxX, maxZ: " + GroundMinBounds.x + ", " + GroundMinBounds.z + ", " + GroundMaxBounds.x + ", " + GroundMaxBounds.z);
+
         }
         else
         {
@@ -31,9 +34,12 @@ public class FoodSpawner : MonoBehaviour
 
     public void SpawnFood()
     {
+
+
         float randomX = Random.Range(GroundMinBounds.x + padding, GroundMaxBounds.x - padding);
         float randomZ = Random.Range(GroundMinBounds.z + padding, GroundMaxBounds.z - padding);
-        Vector3 spawnPosition = new Vector3(randomX, ground.position.y, randomZ);
+        // Magic static number to fix here
+        Vector3 spawnPosition = new Vector3(randomX, ground.position.y + 1, randomZ);
 
         Instantiate(foodPrefab, spawnPosition, Quaternion.identity);
     }
