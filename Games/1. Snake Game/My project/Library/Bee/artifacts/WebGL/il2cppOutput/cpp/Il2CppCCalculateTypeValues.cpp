@@ -3321,12 +3321,6 @@ struct AttrListImpl_tA1915AF130F946A711F08B9795F5EF814492D827  : public RuntimeO
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___attrNames;
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___attrValues;
 };
-struct U3CFallOffMapU3Ed__24_t4C12B3628591388B3F1EA72DD2F29DB8235C47E2  : public RuntimeObject
-{
-	int32_t ___U3CU3E1__state;
-	RuntimeObject* ___U3CU3E2__current;
-	SnakeController_t9A7C38C5F8D0E74B182ADEFDD327E8E8A9FF4DC4* ___U3CU3E4__this;
-};
 struct TypeInfo_t62AF95443A1196CCF884DAFFC4E6785CC02AFC77  : public RuntimeObject
 {
 	Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* ___Attributes;
@@ -10891,7 +10885,14 @@ struct ExtenderType_t32CA9654DAB08B7ECCC32976F2FC07641D8F547F
 {
 	int32_t ___value__;
 };
-struct U3CSinkBodyPartU3Ed__23_t1E41C6210CAD6A6C8A1C519F034AD7D94A82BE20  : public RuntimeObject
+struct U3CFallOffMapU3Ed__26_tF5B12AFFC5B29F239A3EDEFB50CCB58AAB89DEDA  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	SnakeController_t9A7C38C5F8D0E74B182ADEFDD327E8E8A9FF4DC4* ___U3CU3E4__this;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CfallDirectionU3E5__2;
+};
+struct U3CSinkBodyPartU3Ed__25_tD170BE4322E822E60CBB887A553CEFEABF0A4826  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
@@ -14587,7 +14588,8 @@ struct SignaturePointerType_tE19F5E5E18FEB4FD302B62743DCCD3D5414A73DE  : public 
 };
 struct SnakeController_t9A7C38C5F8D0E74B182ADEFDD327E8E8A9FF4DC4  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	float ___MoveSpeed;
+	float ___BaseMoveSpeed;
+	float ___SpeedIncrement;
 	float ___SteerSpeed;
 	float ___BodySpeed;
 	float ___FallSpeed;
@@ -14600,8 +14602,8 @@ struct SnakeController_t9A7C38C5F8D0E74B182ADEFDD327E8E8A9FF4DC4  : public MonoB
 	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___U3CBodyPartsU3Ek__BackingField;
 	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ColliderSize;
 	List_1_t77B94703E05C519A9010DD0614F757F974E1CD8B* ___PositionsHistory;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___GroundMinBounds;
-	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___GroundMaxBounds;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___MapSize;
+	float ___MoveSpeed;
 };
 struct SnakeHead_t94D5AD26F17ABD0F0CC664F237A8F4012B115208  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -20615,9 +20617,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize2121 = { sizeof(U3CModuleU3E
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2122;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2122 = { sizeof(FoodSpawner_tB8C4872944707562A2A321C95C69895EE9028C2E), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2123;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2123 = { sizeof(U3CFallOffMapU3Ed__24_t4C12B3628591388B3F1EA72DD2F29DB8235C47E2), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2123 = { sizeof(U3CFallOffMapU3Ed__26_tF5B12AFFC5B29F239A3EDEFB50CCB58AAB89DEDA), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2124;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize2124 = { sizeof(U3CSinkBodyPartU3Ed__23_t1E41C6210CAD6A6C8A1C519F034AD7D94A82BE20), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize2124 = { sizeof(U3CSinkBodyPartU3Ed__25_tD170BE4322E822E60CBB887A553CEFEABF0A4826), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2125;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize2125 = { sizeof(SnakeController_t9A7C38C5F8D0E74B182ADEFDD327E8E8A9FF4DC4), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize2126;

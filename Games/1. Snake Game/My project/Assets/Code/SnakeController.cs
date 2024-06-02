@@ -5,11 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class SnakeController : MonoBehaviour
 {
-    public float MoveSpeed = 5;
+    public float BaseMoveSpeed = 5; // Base speed of the snake
+    public float SpeedIncrement = 0.1f; // Speed increment per body part
     public float SteerSpeed = 180;
     public float BodySpeed = 5;
-    public float FallSpeed = 2f; // Speed at which the snake falls
-    public int Gap = 100;
+    public float FallSpeed = 0.5f; // Slower fall speed
+    public int Gap = 50; // Adjusted gap value
     public int InitialLength = 3;
 
     public GameObject BodyPrefab;
@@ -21,8 +22,8 @@ public class SnakeController : MonoBehaviour
 
     private Vector3 ColliderSize; // Variable to store the calculated collider size
     private List<Vector3> PositionsHistory = new List<Vector3>();
-    private Vector3 GroundMinBounds;
-    private Vector3 GroundMaxBounds;
+    private Vector2 MapSize; // Size of the map (half-extent)
+    private float MoveSpeed; // Current move speed
 
     void Start()
     {
@@ -38,21 +39,17 @@ public class SnakeController : MonoBehaviour
             GrowSnake();
         }
 
-        // Calculate the map size based on the ground object's scale and position
+        // Calculate the map size based on the ground object's scale
         if (ground != null)
         {
-            Vector3 groundSize = ground.localScale;
-            Vector3 groundCenter = ground.position;
-
-            GroundMinBounds = groundCenter - groundSize / 2;
-            GroundMaxBounds = groundCenter + groundSize / 2;
-            // Debug.Log("Snake minX, minZ, maxX, maxZ: " + GroundMinBounds.x + ", " + GroundMinBounds.z + ", " + GroundMaxBounds.x + ", " + GroundMaxBounds.z);
-
+            MapSize = new Vector2(ground.localScale.x, ground.localScale.z); // Adjust the multiplier as needed
         }
         else
         {
             Debug.LogError("Ground Transform is not assigned!");
         }
+
+        UpdateSpeed();
     }
 
     public void RestartGame()
@@ -86,8 +83,7 @@ public class SnakeController : MonoBehaviour
         }
 
         // Check if the head is out of bounds
-        if (Head.transform.position.x < GroundMinBounds.x || Head.transform.position.x > GroundMaxBounds.x ||
-            Head.transform.position.z < GroundMinBounds.z || Head.transform.position.z > GroundMaxBounds.z)
+        if (Mathf.Abs(Head.transform.position.x) > MapSize.x || Mathf.Abs(Head.transform.position.z) > MapSize.y)
         {
             StartCoroutine(FallOffMap());
         }
@@ -97,6 +93,7 @@ public class SnakeController : MonoBehaviour
     {
         GameObject body = Instantiate(BodyPrefab);
         BodyParts.Add(body);
+        UpdateSpeed(); // Update the speed each time the snake grows
     }
 
     public void ShortenSnake(int cutIndex)
@@ -107,6 +104,12 @@ public class SnakeController : MonoBehaviour
             StartCoroutine(SinkBodyPart(bodyPart));
         }
         BodyParts.RemoveRange(cutIndex, BodyParts.Count - cutIndex);
+        UpdateSpeed(); // Update the speed each time the snake is shortened
+    }
+
+    private void UpdateSpeed()
+    {
+        MoveSpeed = BaseMoveSpeed + (BodyParts.Count * SpeedIncrement);
     }
 
     private IEnumerator SinkBodyPart(GameObject bodyPart)
@@ -128,9 +131,17 @@ public class SnakeController : MonoBehaviour
 
     private IEnumerator FallOffMap()
     {
+        Vector3 fallDirection = (Head.transform.position.x > MapSize.x || Head.transform.position.x < -MapSize.x) ? Vector3.left : Vector3.forward;
+
         while (true)
         {
-            Head.transform.position += Vector3.down * FallSpeed * Time.deltaTime;
+            Head.transform.position += fallDirection * FallSpeed * Time.deltaTime;
+
+            foreach (var body in BodyParts)
+            {
+                body.transform.position += fallDirection * FallSpeed * Time.deltaTime;
+            }
+
             yield return null;
         }
     }

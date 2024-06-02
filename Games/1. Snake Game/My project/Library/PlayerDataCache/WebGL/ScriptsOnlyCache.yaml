@@ -885,7 +885,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: a2259d785097587a10ee4ee09eca05c9
+      Hash: 7b260df7191de99d0bb16bf569e9e8de
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SnakeController
