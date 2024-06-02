@@ -8,16 +8,21 @@ public class SnakeController : MonoBehaviour
     public float MoveSpeed = 5;
     public float SteerSpeed = 180;
     public float BodySpeed = 5;
+    public float FallSpeed = 2f; // Speed at which the snake falls
     public int Gap = 100;
     public int InitialLength = 3;
 
     public GameObject BodyPrefab;
     public GameObject Head; // Reference to the Head GameObject
+    public Transform ground; // Reference to the Ground Transform
 
     public float ColliderBoxScale = 1.5f;
-    private Vector3 ColliderSize; // Variable to store the calculated collider size
     public List<GameObject> BodyParts { get; private set; } = new List<GameObject>();
+
+    private Vector3 ColliderSize; // Variable to store the calculated collider size
     private List<Vector3> PositionsHistory = new List<Vector3>();
+    private Vector3 GroundMinBounds;
+    private Vector3 GroundMaxBounds;
 
     void Start()
     {
@@ -31,6 +36,20 @@ public class SnakeController : MonoBehaviour
         for (int i = 0; i < InitialLength; i++)
         {
             GrowSnake();
+        }
+
+        // Calculate the map size based on the ground object's scale and position
+        if (ground != null)
+        {
+            Vector3 groundSize = ground.localScale;
+            Vector3 groundCenter = ground.position;
+
+            GroundMinBounds = groundCenter - groundSize / 2;
+            GroundMaxBounds = groundCenter + groundSize / 2;
+        }
+        else
+        {
+            Debug.LogError("Ground Transform is not assigned!");
         }
     }
 
@@ -64,6 +83,12 @@ public class SnakeController : MonoBehaviour
             RestartGame();
         }
 
+        // Check if the head is out of bounds
+        if (Head.transform.position.x < GroundMinBounds.x || Head.transform.position.x > GroundMaxBounds.x ||
+            Head.transform.position.z < GroundMinBounds.z || Head.transform.position.z > GroundMaxBounds.z)
+        {
+            StartCoroutine(FallOffMap());
+        }
     }
 
     public void GrowSnake()
@@ -97,5 +122,14 @@ public class SnakeController : MonoBehaviour
         }
 
         Destroy(bodyPart);
+    }
+
+    private IEnumerator FallOffMap()
+    {
+        while (true)
+        {
+            Head.transform.position += Vector3.down * FallSpeed * Time.deltaTime;
+            yield return null;
+        }
     }
 }

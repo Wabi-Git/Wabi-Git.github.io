@@ -247,7 +247,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   foodPrefab: {fileID: 48294565032114808, guid: a7276623e84923b4e8c633fd2f0ecc54, type: 3}
   ground: {fileID: 1137004251798691579, guid: 6afbe6d7f43b08449af8e7afae483ee7, type: 3}
-  padding: 2
+  padding: 1
 --- !u!4 &721731213
 Transform:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 30.5, z: 0}
+  m_LocalPosition: {x: 0, y: 28.8, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -403,11 +403,18 @@ MonoBehaviour:
   MoveSpeed: 5
   SteerSpeed: 180
   BodySpeed: 5
+  FallSpeed: 1
   Gap: 100
   InitialLength: 5
   BodyPrefab: {fileID: 3460383625146968875, guid: 9f4b19af89192e34cbc4eabe8600b4c6, type: 3}
   Head: {fileID: 2020372395}
+  ground: {fileID: 1801297851}
   ColliderBoxScale: 1
+--- !u!4 &1801297851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1137004251798691579, guid: 6afbe6d7f43b08449af8e7afae483ee7, type: 3}
+  m_PrefabInstance: {fileID: 1491273971738240505}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2020372395 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 808588568212645953, guid: 32f41d6f0b496fe45ad0a5712267dae8, type: 3}

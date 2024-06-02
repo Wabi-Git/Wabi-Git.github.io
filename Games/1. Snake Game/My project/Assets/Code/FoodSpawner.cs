@@ -8,15 +8,18 @@ public class FoodSpawner : MonoBehaviour
     public Transform ground; // The transform of the ground object
     public float padding = 1.0f; // Padding from the edges
 
-    private float groundSizeX;
-    private float groundSizeZ;
+    private Vector3 GroundMinBounds;
+    private Vector3 GroundMaxBounds;
 
     void Start()
     {
         if (ground != null)
         {
-            groundSizeX = ground.localScale.x * 5; // Adjust the multiplier as needed
-            groundSizeZ = ground.localScale.z * 5; // Adjust the multiplier as needed
+            Vector3 groundSize = ground.localScale;
+            Vector3 groundCenter = ground.position;
+
+            GroundMinBounds = groundCenter - groundSize / 4;
+            GroundMaxBounds = groundCenter + groundSize / 4;
         }
         else
         {
@@ -28,8 +31,8 @@ public class FoodSpawner : MonoBehaviour
 
     public void SpawnFood()
     {
-        float randomX = Random.Range(-groundSizeX + padding, groundSizeX - padding);
-        float randomZ = Random.Range(-groundSizeZ + padding, groundSizeZ - padding);
+        float randomX = Random.Range(GroundMinBounds.x + padding, GroundMaxBounds.x - padding);
+        float randomZ = Random.Range(GroundMinBounds.z + padding, GroundMaxBounds.z - padding);
         Vector3 spawnPosition = new Vector3(randomX, ground.position.y, randomZ);
 
         Instantiate(foodPrefab, spawnPosition, Quaternion.identity);
